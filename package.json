@@ -1,7 +1,7 @@
 {
   "name": "pop-syntax",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Syntax theme for pop-ui.",
   "keywords": [
     "syntax",
