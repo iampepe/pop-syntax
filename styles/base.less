@@ -18,7 +18,9 @@ atom-text-editor {
 
   .line {
     &.cursor-line {
-      background-color: @syntax-selection-color;
+      //bracket-matcher
+      // background-color: @syntax-selection-color;
+      background-color: fade(@syntax-text-color,10%);
     }
   }
 
@@ -28,8 +30,10 @@ atom-text-editor {
 
     .line-number {
       &.cursor-line {
-        background-color: @syntax-selection-color;
-        color: @syntax-gutter-text-color-selected;
+        //bracket-matcher
+        // background-color: @syntax-selection-color;
+        background-color: fade(@syntax-text-color,10%);
+        color: @syntax-gutter-text-color-selected
       }
 
       &.cursor-line-no-selection {
@@ -53,7 +57,9 @@ atom-text-editor {
   }
 
   .selection .region {
-    background-color: @syntax-selection-color;
+    //bracket-matcher
+    // background-color: @syntax-selection-color;
+    background-color: fade(@syntax-text-color,10%);
   }
 }
 
@@ -304,4 +310,20 @@ atom-text-editor {
 
 atom-text-editor[mini] .scroll-view {
   padding-left: 1px;
+}
+
+
+// Brackets matcher
+.bracket-matcher .region {
+    border-bottom: 0;
+}
+.bracket-matcher .region:after {
+    content: "";
+    border: 1px solid @orange;
+    border-style: solid;
+    border-radius: 2px;
+    background-color: fade(@orange,20%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }

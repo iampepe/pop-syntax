@@ -5,7 +5,8 @@
   "description": "Syntax theme for pop-ui.",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "pop"
   ],
   "repository": "https://github.com/iampepe/pop-syntax",
   "license": "MIT",
